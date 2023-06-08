@@ -83,7 +83,13 @@
 
           <div class="col-1-of-2">
             <div class="composition">
-              <img
+              
+              <img srcset="img/nat-1.jpg 300w, img/nat-2-large 1000w" alt="photo1" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" class='composition__photo composition__photo--p1'>
+              <img srcset="img/nat-2.jpg 300w, img/nat-2-large 1000w" alt="photo2" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" class='composition__photo composition__photo--p2'>
+              <img srcset="img/nat-3.jpg 300w, img/nat-2-large 1000w" alt="photo3" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" class='composition__photo composition__photo--p3'>
+              
+              
+              <!-- <img
                 src="img/nat-1-large.jpg"
                 alt="photo1"
                 class="composition__photo composition__photo--p1"
@@ -95,7 +101,9 @@
                 src="img/nat-3-large.jpg"
                 alt="photo 3"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
+            
+            
             </div>
           </div>
         </div>
@@ -378,7 +386,10 @@
     
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+        <picture>
+          <source srcset="img/logo-green-small-1x 1x, img/logo-green-small-2x 2x" media="(max-width: 37.5em)">
+          <img srcset="img/logo-green-1x 1x,   img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -404,8 +415,8 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__image">
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__image">
+          <img src="img/nat-8-compressed.jpg 1x, img/nat-8.jpg 2x" alt="Tour photo" class="popup__image">
+          <img src="img/nat-9-compressed.jpg 1x, img/nat-9.jpg 2x" alt="Tour photo" class="popup__image">
         </div>
 
         <div class="popup__right">
