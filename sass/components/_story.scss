@@ -33,11 +33,17 @@
     height: 15rem;
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
-
+    overflow: hidden;
+    border-radius: 3px;
     shape-outside: circle(50% at 60% 60%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+
+    @supports (clip-path: circle(50% at 50% 50%)) or
+      (-webkit-clip-path: circle(50% at 50% 50%)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: skewX(0);
